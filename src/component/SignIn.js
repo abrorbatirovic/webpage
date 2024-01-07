@@ -10,7 +10,8 @@ const SignIn = ({show, toggleModal}) => {
         event.preventDefault()
         const eventPassword = event.target[0].value
         if (eventPassword.toUpperCase().trim() === PASSWORD.toUpperCase()) {
-            window.open('https://developer.mozilla.org/en-US/docs/Web/API/Window/open', "blank")
+            window.open('https://github.com/abrorbatirovic/webpage', "blank")
+            toggleModal()
         } else {
             toast.error('Неверный пароль')
         }
