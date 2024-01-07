@@ -10,7 +10,7 @@ const SignIn = ({show, toggleModal}) => {
         event.preventDefault()
         const eventPassword = event.target[0].value
         if (eventPassword.toUpperCase().trim() === PASSWORD.toUpperCase()) {
-            window.open('https://github.com/abrorbatirovic/webpage', "blank")
+            window.open('https://batirovic-portfolio.netlify.app/', "blank")
             toggleModal()
         } else {
             toast.error('Неверный пароль')
